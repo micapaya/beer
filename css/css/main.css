@@ -1,0 +1,128 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: black; }
+
+body {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  position: absolute; }
+
+.triangle_left {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  overflow: hidden; }
+
+.image_left {
+  background: url("../../src/beer2.jpg");
+  *
+	background-repeat: no-repeat;
+  width: 1200px;
+  height: 1200px;
+  margin-top: -626px;
+  margin-left: -626px;
+  transform: rotate(135deg); }
+
+.triangle_right {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  overflow: hidden; }
+
+.image_right {
+  background: url("../../src/beer2.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 1200px;
+  margin-top: -586px;
+  margin-left: 186px;
+  transform: rotate(-135deg); }
+
+header {
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0; }
+
+div.contain_title {
+  margin: auto;
+  text-align: center;
+  border: 8px solid white;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  transform: rotate(45deg); }
+
+div.title {
+  margin: auto;
+  transform: rotate(-45deg); }
+
+.name {
+  font-family: 'helvetica';
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase; }
+
+.subtitle {
+  font-family: 'helvetica';
+  font-size: 2em;
+  color: white; }
+
+section.first {
+  width: 400px;
+  height: 400px;
+  margin-top: -250px;
+  margin-left: 200px;
+  position: absolute;
+  background: url("../../src/soft.png");
+  background-position: 100% 30%;
+  background-size: 100%;
+  background-attachment: fixed;
+  transform: rotate(135deg); }
+
+section.secund {
+  width: 400px;
+  height: 400px;
+  margin-top: -248px;
+  margin-left: 836px;
+  background: url("../../src/beertop.jpg");
+  background-position: 100% 100%;
+  background-size: 100%;
+  background-attachment: fixed;
+  transform: rotate(-135deg); }
+
+section.third {
+  width: 400px;
+  height: 400px;
+  margin-top: -100px;
+  margin-left: 520px;
+  transform: rotate(45deg);
+  overflow: hidden; }
+
+div.bg {
+  width: 1300px;
+  height: 1300px;
+  margin-top: -340px;
+  margin-left: -340px;
+  background: url("../../src/beer3.jpg");
+  background-size: 100%;
+  transform: rotate(-45deg);
+  transform-origin: 60% 40%;
+  animation: rotateBG 35s infinite linear; }
+
+@keyframes rotateBG {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(359deg); } }
+
+/*# sourceMappingURL=main.css.map */
