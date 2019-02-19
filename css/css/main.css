@@ -60,7 +60,8 @@ div.contain_title {
   height: 400px;
   display: flex;
   justify-content: center;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  overflow: hidden; }
 
 div.title {
   margin: auto;
@@ -70,59 +71,138 @@ div.title {
   font-family: 'helvetica';
   font-size: 4em;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 1; }
 
 .subtitle {
   font-family: 'helvetica';
   font-size: 2em;
-  color: white; }
-
-section.first {
-  width: 400px;
-  height: 400px;
-  margin-top: -250px;
-  margin-left: 200px;
-  position: absolute;
-  background: url("../../src/soft.png");
-  background-position: 100% 30%;
-  background-size: 100%;
-  background-attachment: fixed;
-  transform: rotate(135deg); }
-
-section.secund {
-  width: 400px;
-  height: 400px;
-  margin-top: -248px;
-  margin-left: 836px;
-  background: url("../../src/beertop.jpg");
-  background-position: 100% 100%;
-  background-size: 100%;
-  background-attachment: fixed;
-  transform: rotate(-135deg); }
-
-section.third {
-  width: 400px;
-  height: 400px;
-  margin-top: -100px;
-  margin-left: 520px;
-  transform: rotate(45deg);
-  overflow: hidden; }
+  color: white;
+  z-index: 1; }
 
 div.bg {
+  position: absolute;
   width: 1300px;
   height: 1300px;
-  margin-top: -340px;
-  margin-left: -340px;
+  top: -50vh;
+  left: -60vw;
   background: url("../../src/beer3.jpg");
   background-size: 100%;
   transform: rotate(-45deg);
   transform-origin: 60% 40%;
-  animation: rotateBG 35s infinite linear; }
+  animation: rotateBG 35s infinite linear;
+  z-index: -1; }
 
 @keyframes rotateBG {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(359deg); } }
+section.first {
+  width: 400px;
+  height: 400px;
+  margin-top: -250px;
+  margin-left: 200px;
+  position: absolute;
+  transform: rotate(135deg);
+  display: flex;
+  overflow: hidden;
+  border: 4px solid white; }
+
+#beersStrong {
+  transform: rotate(-135deg);
+  margin: auto;
+  margin-left: -20px; }
+
+section.first img {
+  width: 890px;
+  transform: rotate(-135deg);
+  position: absolute;
+  z-index: -1;
+  margin-top: -20px;
+  margin-left: -150px; }
+
+section.secund {
+  width: 400px;
+  height: 400px;
+  margin-top: -248px;
+  margin-left: 836px;
+  transform: rotate(-135deg);
+  display: flex;
+  overflow: hidden;
+  border-top: 4px solid white;
+  border-right: 4px solid white; }
+
+div.content {
+  transform: rotate(135deg);
+  display: flex; }
+
+div.content img {
+  width: 260px;
+  height: auto;
+  margin: auto;
+  margin-left: -135px;
+  margin-right: 135px;
+  margin-top: 22px; }
+
+div.content p {
+  background-color: black;
+  font-family: 'helvetica';
+  font-size: .8em;
+  color: white;
+  width: 150px;
+  height: 800px;
+  padding-top: 228px;
+  padding-left: 30px;
+  padding-right: 150px;
+  border-left: 1px solid white;
+  margin: auto;
+  margin-left: -155px;
+  margin-top: -150px;
+  margin-right: -145px;
+  background: orange; }
+
+section.third {
+  width: 400px;
+  height: 400px;
+  margin-top: -100px;
+  margin-left: 512px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 8px solid white; }
+
+div.chope {
+  background: black;
+  width: 400px;
+  height: 400px;
+  display: flex; }
+
+div.chope #splash {
+  transform: rotate(-45deg);
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 170px; }
+
+#log {
+  transform: rotate(-45deg);
+  width: 250px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute; }
+
+.strong {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-family: 'helvetica';
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: 12px double white;
+  width: 570px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 150px;
+  left: -85px; }
 
 /*# sourceMappingURL=main.css.map */
