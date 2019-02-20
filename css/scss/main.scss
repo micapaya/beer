@@ -242,10 +242,29 @@ section.event {
 	background: black;
 	display: flex;
 }
+
 .actu {
 	width: 49.9vw;
 	height: 50vh;
 	border-right: 4px solid white;
+	display: flex;
+	overflow:hidden;
+}
+.soon {
+	width: 49.9vw;
+	height: 50vh;
+	display: flex;
+	overflow:hidden;
+}
+.actu img {
+	width: 49.9vw;
+	margin: auto;
+
+}
+.soon img {
+	width: 49.9vw;
+	margin: auto;
+
 }
 .act_title {
 	color: white;
@@ -253,8 +272,77 @@ section.event {
 	background-color: orange;
 	display: block;
 	width: 80px;
+	height: 20px;
 	padding: 12px;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'helvetica';
+	position: absolute;
+}
+
+.menu {
+	width: 100vw;
+	height: 49vh;
+	display: flex;
+	overflow: hidden;
+	border-top: 4px solid white;
+	background: url('../../src/wood.jpg');
+	background-color: grey;
+	background-blend-mode: multiply;
+	background-size: 100%;
+}
+.title_whiskey {
+	color: white;
+	font-size: 4em;
+	font-family: 'Great Vibes';
+	position: absolute;
+	margin-top: -10px;
+	font-weight: lighter;
+	border-bottom: 2px solid orange;
+	width: 100vw;
+	height: 38px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 55px;
+}
+.left_title {
+	color: white;
+	font-size: 2em;
+	font-family: 'Great Vibes';
+	position: absolute;
+	margin-top: 24px;
+	font-weight: lighter;
+	right: 50px;
+	z-index: 2;
+}
+.resume {
+	color: white;
+	font-family: 'Great Vibes';
+	font-size: 1.5em;
+	margin: auto;
+	margin-left: 255px;
+	margin-top: 110px;
+	width: 30vw;
+
+}
+.Whiskey {
+	margin: auto;
+	height: 100vh;
+	margin-top: -32vh;
+	transform: rotate(30deg);
+	filter: drop-shadow(0 0 2rem orange);
+	animation: drop 4s linear infinite;
+	
+}
+
+@keyframes drop {
+	0% {
+		filter: drop-shadow(0 .75rem 2rem orange);
+	}
+	50% {
+		filter: drop-shadow(0 0 4rem black);
+	}
+	100% {
+		filter: drop-shadow(0 .75rem 2rem orange);
+	}
 }
